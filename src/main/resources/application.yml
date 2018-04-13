@@ -1,0 +1,13 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: kafka-test
+  kafka:
+    bootstrap-servers: 192.168.56.11:9092
+    consumer:
+      group-id: myGroup
+    template:
+      default-topic: my-topic
+    producer:
+      batch-size: 10
